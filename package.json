@@ -1,0 +1,21 @@
+{
+  "name": "alertespro",
+  "description": "Serveur AlertesPro : comptes, bot Telegram et alertes de trading personnalisées.",
+  "private": true,
+  "cloudflare": {
+    "label": "AlertesPro",
+    "products": ["Workers", "D1"],
+    "bindings": {
+      "TG_TOKEN": {
+        "description": "Le jeton de ton bot Telegram, donné par @BotFather (il ressemble à 123456789:AAH...). Colle-le en entier."
+      }
+    }
+  },
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "4.136.1"
+  }
+}
